@@ -1,4 +1,6 @@
+
 /*	Version 1.2
+ *
  *  This code is modified from the original from SmartThings.
  *  I am by no means using this for sale or financial gain.
  *	This is solely for personal use, any persons who use this code do so
