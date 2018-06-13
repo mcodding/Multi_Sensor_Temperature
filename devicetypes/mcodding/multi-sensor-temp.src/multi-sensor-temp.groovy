@@ -27,9 +27,7 @@ metadata {
 		fingerprint inClusters: "0000,0001,0003,0402,0500,0020,0B05,FC02", outClusters: "0019", manufacturer: "CentraLite", model: "3321"
 		fingerprint inClusters: "0000,0001,0003,0402,0500,0020,0B05,FC02", outClusters: "0019", manufacturer: "CentraLite", model: "3321-S", deviceJoinName: "Multipurpose Sensor"
 		fingerprint inClusters: "0000,0001,0003,000F,0020,0402,0500,FC02", outClusters: "0019", manufacturer: "SmartThings", model: "multiv4", deviceJoinName: "Multipurpose Sensor"
-		fingerprint inClusters: "0000,0001,0003,0020,0402,0500,FC02", outClusters: "0019", manufacturer: "Samjin", model: "multi", deviceJoinName: "Multipurpose Sensor"
-
-		attribute "status", "string"
+		fingerprint inClusters: "0000,0001,0003,0020,0402,0500,FC02", outClusters: "0019", manufacturer: "Samjin", model: "multi", deviceJoinName: "Multipurpose Sensor"		attribute "status", "string"
 	}
 
 	simulator {
@@ -76,7 +74,7 @@ metadata {
 				attributeState "garage-closed", label: 'Closed', icon: "st.doors.garage.garage-closed", backgroundColor: "#00a0dc"
 			}
 		}
-        standardTile("contact", "device.contact", width: 2, height: 2, canChangeIcon: true) {
+        standardTile("contact", "device.contact", width: 2, height: 2) {
 			state("open", label: 'Open', icon: "st.contact.contact.open", backgroundColor: "#e86d13")
 			state("closed", label: 'Closed', icon: "st.contact.contact.closed", backgroundColor: "#00a0dc")
 		}
