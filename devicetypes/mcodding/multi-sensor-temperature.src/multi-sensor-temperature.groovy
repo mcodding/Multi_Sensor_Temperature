@@ -41,7 +41,7 @@ metadata {
 		status "no acceleration": "acceleration: 0"
 
 		for (int i = 10; i <= 50; i += 10) {
-			status "temp ${i}C": "contactState: 0, accelerationState: 0, temp: $i C, battery: 100"
+			status "temp ${i}F": "contactState: 0, accelerationState: 0, temp: $i F, battery: 100"
 		}
 
 		// kinda hacky because it depends on how it is installed
