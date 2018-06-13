@@ -76,7 +76,7 @@ metadata {
 				attributeState "garage-closed", label: 'Closed', icon: "st.doors.garage.garage-closed", backgroundColor: "#00a0dc"
 			}
 		}
-		standardTile("contact", "device.contact", width: 2, height: 2) {
+        standardTile("contact", "device.contact", width: 2, height: 2, canChangeIcon: true) {
 			state("open", label: 'Open', icon: "st.contact.contact.open", backgroundColor: "#e86d13")
 			state("closed", label: 'Closed', icon: "st.contact.contact.closed", backgroundColor: "#00a0dc")
 		}
