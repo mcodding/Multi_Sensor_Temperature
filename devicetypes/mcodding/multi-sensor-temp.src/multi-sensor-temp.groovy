@@ -10,7 +10,7 @@ import physicalgraph.zigbee.clusters.iaszone.ZoneStatus
 import physicalgraph.zigbee.zcl.DataType
 
 metadata {
-	definition(name: "Multi Sensor Temp", namespace: "mcodding", author: "SmartThings", runLocally: false, minHubCoreVersion: '000.017.0012', executeCommandsLocally: false, mnmn: "SmartThings", vid: "generic-contact-2") {
+	definition(name: "Multi Sensor Temperature", namespace: "mcodding", author: "SmartThings", runLocally: false, minHubCoreVersion: '000.017.0012', executeCommandsLocally: false, mnmn: "SmartThings", vid: "generic-contact-2") {
 
 		capability "Three Axis"
 		capability "Battery"
@@ -40,7 +40,7 @@ metadata {
 		status "no acceleration": "acceleration: 0"
 
 		for (int i = 10; i <= 50; i += 10) {
-			status "temp ${i}C": "contactState: 0, accelerationState: 0, temp: $i C, battery: 100"
+			status "temp ${i}F": "contactState: 0, accelerationState: 0, temp: $i F, battery: 100"
 		}
 
 		// kinda hacky because it depends on how it is installed
